@@ -1,0 +1,20 @@
+<h2>Root Elements</h2>
+<table>
+  <thead>
+    <tr>
+      <th>refMenuId </th>
+      <th>ID</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let element of rootElements.data" (click)="openChildElements(element.refMenuId)">
+      
+       <td>{{ element.refMenuId  }}</td>
+       <td>{{ element.id }}</td>
+       
+    </tr>
+  </tbody>
+</table>
+
+

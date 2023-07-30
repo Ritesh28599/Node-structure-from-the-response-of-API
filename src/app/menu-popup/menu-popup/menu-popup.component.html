@@ -1,0 +1,53 @@
+<h2>Child Elements</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+        <th>entDate</th>
+        <th>entTerm</th>
+        <th>entUser</th>
+        <th>isActive</th>
+        <th>menuIcon</th>
+        <th>menuPath</th>
+        <th>name</th>
+        <th>objectName</th>
+        <th>orderNum</th>
+        <th>refGroup</th>
+        <th>refGroupNavigation</th>
+        <th>refMenuId</th>
+        <th>remarks</th>
+        <th>tblRoleWiseMenu</th>
+        <th>type</th>
+        <th>updDate</th>
+        <th>updTerm</th>
+        <th>updUser</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr *ngFor="let menu of data">
+      <td>{{menu.id}}</td>
+        <td>{{menu.entDate}}</td>
+        <td>{{menu.entTerm}}</td>
+        <td>{{menu.entUser}}</td>
+        <td>{{menu.isActive}}</td>
+        <td>{{menu.menuIcon}}</td>y
+        <td>{{menu.menuPath}}</td>
+        <td>{{menu.name}}</td>
+        <td>{{menu.objectName}}</td>
+        <td>{{menu.orderNum}}</td>
+        <td>{{menu.refGroup}}</td>
+        <td>{{menu.refGroupNavigation}}</td>
+        <td>{{menu.refMenuId}}</td>
+        <td>{{menu.remarks}}</td>
+        <td>{{menu.tblRoleWiseMenu}}</td>
+        <td>{{menu.type}}</td>
+        <td>{{menu.updDate}}</td>
+        <td>{{menu.updTerm}}</td>
+        <td>{{menu.updUser}}</td>
+    </tr>
+  </tbody>
+</table>
+<button mat-raised-button color="primary" (click)="closeDialog()">Close</button>
+
+
